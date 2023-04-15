@@ -28,3 +28,7 @@ Route::get("drives/{drive}", [\App\Http\Controllers\PageController::class, "show
 Route::view("userform", "userform");
 
 Route::post("UserController", [\App\Http\Controllers\UserController::class, "account"]);
+
+//db
+Route::get("db", [\App\Http\Controllers\DbController::class, "index"]);
+
